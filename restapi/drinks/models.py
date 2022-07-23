@@ -9,3 +9,6 @@ class Drink(models.Model):
     
     def __str__(self) -> str:
         return self.name+" "+self.discription
+
+class uploadimages(models.Model):
+    images=models.ImageField(upload_to="images")
